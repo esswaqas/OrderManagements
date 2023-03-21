@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "178534217061",
+    "project_id": "freeordermanagement",
+    "storage_bucket": "freeordermanagement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178534217061:android:f57b4f1ed245cb3dab1d8c",
+        "android_client_info": {
+          "package_name": "com.ordermanagements"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178534217061-i2ab31595b8jfb0klbijeoae1htvsbe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ordermanagements",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "178534217061-p94l8r3juodt1tujr6nbmtmmkvpuk4hh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYDoWUSvXHafukKLrrt72RsyQiGpINP1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178534217061-p94l8r3juodt1tujr6nbmtmmkvpuk4hh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

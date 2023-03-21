@@ -1,0 +1,8 @@
+{
+    "name": "src",
+
+    "dependencies": {
+        "react-native": "0.70.0"
+    }
+    
+}

@@ -1,0 +1,75 @@
+{
+    "duration": 1140,
+    "problem": "CLIENT_ERROR",
+    "originalError": {
+        "message": "Request failed with status code 401",
+        "name": "Error",
+        "stack": "Error: Request failed with status code 401\n    at createError (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:96115:26)\n    at settle (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:96107:61)\n    at onloadend (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:95921:59)\n    at call (native)\n    at dispatchEvent (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:27741:31)\n    at setReadyState (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:27021:29)\n    at __didCompleteResponse (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:26823:29)\n    at apply (native)\n    at anonymous (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:26948:52)\n    at apply (native)\n    at emit (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:1733:40)\n    at apply (native)\n    at __callFunction (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:2417:36)\n    at anonymous (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:2179:31)\n    at __guard (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:2369:15)\n    at callFunctionReturnFlushedQueue (http://localhost:8081/index.bundle?platform=android&dev=true&minify=false&app=com.ordermanagements&modulesOnly=false&runModule=true:2178:21)",
+        "config": {
+            "url": "order?userid=dffe1315-2eff-4bca-948b-08c78bf634c3",
+            "method": "get",
+            "headers": {
+                "Accept": "application/json"
+            },
+            "params": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJpZCI6ImQyYzQ4MWI4LWJlZjItNGRmNC1iNGU2LTM4ZDJiNjdjNWRkMiIsIlBhc3N3b3JkSGFzaCI6IkFRQUFBQUVBQUNjUUFBQUFFQ1JnY1VLdys0RVlBdU9Idk9oemNyQzUyejZGY0pSNWIzVTdYakhGZk1RRTc3OTFXYU9zSFRjbGhXODVxbldzNkE9PSIsImV4cCI6MTY3NDIyNzcxNiwiaXNzIjoiaHR0cDovL2FwaS5mcmVlb3JkZXIuY28udWsiLCJhdWQiOiJGcmVlb3JkZXIgVXNlcnMifQ.vEqSzVAjG-sFURv2NZcFy30Ebp-QtggUm6-gfAg4EY0"
+            },
+            "baseURL": "http://api.freeorder.co.uk/api/",
+            "transformRequest": [
+                null
+            ],
+            "transformResponse": [
+                null
+            ],
+            "timeout": 0,
+            "xsrfCookieName": "XSRF-TOKEN",
+            "xsrfHeaderName": "X-XSRF-TOKEN",
+            "maxContentLength": -1,
+            "maxBodyLength": -1,
+            "transitional": {
+                "silentJSONParsing": true,
+                "forcedJSONParsing": true,
+                "clarifyTimeoutError": false
+            }
+        }
+    },
+    "ok": false,
+    "status": 401,
+    "headers": {
+        "connection": "keep-alive",
+        "content-length": "0",
+        "date": "Fri, 20 Jan 2023 12:56:43 GMT",
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "www-authenticate": "Bearer"
+    },
+    "config": {
+        "url": "order?userid=dffe1315-2eff-4bca-948b-08c78bf634c3",
+        "method": "get",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "params": {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJpZCI6ImQyYzQ4MWI4LWJlZjItNGRmNC1iNGU2LTM4ZDJiNjdjNWRkMiIsIlBhc3N3b3JkSGFzaCI6IkFRQUFBQUVBQUNjUUFBQUFFQ1JnY1VLdys0RVlBdU9Idk9oemNyQzUyejZGY0pSNWIzVTdYakhGZk1RRTc3OTFXYU9zSFRjbGhXODVxbldzNkE9PSIsImV4cCI6MTY3NDIyNzcxNiwiaXNzIjoiaHR0cDovL2FwaS5mcmVlb3JkZXIuY28udWsiLCJhdWQiOiJGcmVlb3JkZXIgVXNlcnMifQ.vEqSzVAjG-sFURv2NZcFy30Ebp-QtggUm6-gfAg4EY0"
+        },
+        "baseURL": "http://api.freeorder.co.uk/api/",
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        }
+    },
+    "data": null
+}
