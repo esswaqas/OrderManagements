@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
+    isLoader:false,
     userData: null,
     userID: null,
     NewOrder: null,
@@ -8,12 +9,26 @@ const initialState = {
     token:null,
     fctoken:null,
     OrderList:null,
+    CustomerList:null,
+    ProductItemList:null,
+    ProductList:null,
+    PendingOrderList:null,
+    messageType:'',
+    messagetitle:'',
+    messagebody:'',
+    messagecancelbtn:null,
+    isvisibleMessage:null
+     
+
 }
 
 export const mainSlice = createSlice({
   name: 'mainSlice',
   initialState,
   reducers: {
+    setisLoader:   (state,action) => {
+        state.isLoader=action.payload
+    },
   
  setUserData:   (state,action) => {
     state.userData=action.payload
@@ -48,11 +63,61 @@ export const mainSlice = createSlice({
 
     // dispatch({type: "OrderList" , payload : data})
 },
+setCustomerList : (state,action) => {
+    state.CustomerList=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+setProductItemList: (state,action) => {
+    state.ProductItemList=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+setProductList: (state,action) => {
+    state.ProductList=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+setPendingOrderList: (state,action) => {
+    state.PendingOrderList=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+
+setmessageType: (state,action) => {
+    state.messageType=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+setmessagetitle: (state,action) => {
+    state.messagetitle=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+setmessagebody: (state,action) => {
+    state.messagebody=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+
+setmessagecancelbtn: (state,action) => {
+    state.messagecancelbtn=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+
+setisvisibleMessage: (state,action) => {s
+    state.isvisibleMessage=action.payload
+
+    // dispatch({type: "OrderList" , payload : data})
+},
+
+
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { setUserData, setUserID, setUser ,setJToken,setOrderList,setFCToken,setNewOrder} = mainSlice.actions
+export const { setisLoader,setUserData, setUserID, setUser ,setJToken,setOrderList,setFCToken,setNewOrder,setCustomerList,setProductItemList,setProductList ,setPendingOrderList,setmessageType,setmessagetitle,setmessagebody,setmessagecancelbtn,setisvisibleMessage} = mainSlice.actions
 
 export default mainSlice.reducer
 

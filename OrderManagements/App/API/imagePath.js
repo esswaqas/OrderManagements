@@ -1,4 +1,7 @@
+import { APICall, NetworkConfig, Endpoints } from '../API'
 const ImagePath = {
-    imageBASE_URL : "http://chronokey-dev.azurewebsites.net/images/"
+     
+
+    ProductImageUrl :NetworkConfig.BASE_Image_URL+'/images/Products/' 
 }
 export default ImagePath

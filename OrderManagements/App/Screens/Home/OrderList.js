@@ -105,7 +105,7 @@ return(
 
 
     <View style={style.ListPagecontainer}>
-              <Loader loading={loading} />
+              {/* <Loader loading={loading} /> */}
 
                   
                     <FlatList

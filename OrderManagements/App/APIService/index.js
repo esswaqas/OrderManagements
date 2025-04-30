@@ -7,6 +7,7 @@ const client =  create
 })
 
 client.addAsyncRequestTransform((request) => async () => {
+    //alert("request== "+JSON.stringify(request))
     return new Promise((resolve) => setTimeout(resolve, 2000))
 })
 

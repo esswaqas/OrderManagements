@@ -121,10 +121,11 @@ const  rederItems = ({ item, index }) => {
     )}
 
 return(
+//v   0309 40 84 345
 
 
     <View style={style.ListPagecontainer}>
-              <Loader loading={loading} />
+              {/* <Loader loading={loading} /> */}
 
                   
                     <FlatList

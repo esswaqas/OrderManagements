@@ -21,7 +21,7 @@ import Toast from 'react-native-toast-message'
 
 import Dialog, { DialogFooter, DialogButton, DialogContent,DialogTitle } from 'react-native-popup-dialog';
  
-import NotificationSounds, { playSampleSound } from  'react-native-notification-sounds';
+ 
  export default TimeModel=(props)=>
  {
   const [visible, setvisible] = useState(props.visible);

@@ -296,6 +296,7 @@ return(
           <Icon name="envelope" type="font-awesome" color="grey"  size={hp('2%')} style={{paddingLeft: 5}} />
           <Text style={[style.ListRowText,{fontSize:RFValue(11)}]}> {customerEmail}</Text>
     </View>
+    
     <View style={{flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center',}}>
           <Icon name="phone" type="font-awesome" color="grey"  size={hp('2%')} style={{paddingLeft: 5}}/>
           <Text style={[style.ListRowText,{fontSize:RFValue(11)}]}> {phoneNumber}</Text>

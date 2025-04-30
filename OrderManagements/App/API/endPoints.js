@@ -1,13 +1,19 @@
-export const IMAGE_BASE_URL = "https://chronokey-dev.azurewebsites.net/images/";
+ 
 
 const Endpoints = {
     // AUTH
-    endPointLogin: "auth",
-    endPointGetOrderByuserID: "Order/getbyuserid",
-    endPointUpdateOrderStatus: "order",
-    endPointGetCustomerDetailByID: "customer/",
-    endPointGetOrderDetailByID: "orderdetails/GetByorderID/",
+    endPointLogin: "Customer/Login",
+    endPointProductList: "CustomerSale/GetProductList",
 
-   
+    endPointGetCustomerAppItemList: "Customer/GetCustomerAppItemList",
+    endPointProductDetailByID: "CustomerSale/GetProductDetailByID",
+    endPointCreateSaleOrder: "CustomerSale/CreateSaleOrder",
+    endPointNewSaleOrder: "CustomerSale/NewSaleOrder",
+
+    endPointGetAreaList: "Customer/GetAreaList",
+    endPointGetCustomerOrder: "Customer/GetCustomerOrder",
+    endPointGetCustomerLedger: "Customer/GetCustomerLedger",
+
+    endPointCustomerPayment: "Customer/CustomerPayment",
 }
 export default Endpoints

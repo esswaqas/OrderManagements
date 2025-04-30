@@ -9,7 +9,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Toast from 'react-native-toast-message'
 import { setOrderList } from '../redux/Slices/MainSlice';
  
-import NotificationSounds, { playSampleSound } from  'react-native-notification-sounds';
+ 
  
 
 
@@ -83,7 +83,7 @@ NotificationSounds.getNotifications('notification').then(soundsList  => {
   pass the complete sound object.
   This function can be used for playing the sample sound
   */
-  playSampleSound(soundsList[2]);
+  //playSampleSound(soundsList[2]);
   // if you want to stop any playing sound just call:
   //stopSampleSound();
 });

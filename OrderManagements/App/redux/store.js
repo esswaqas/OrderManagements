@@ -1,18 +1,28 @@
-// import {createStore , compose , applyMiddleware}  from 'redux'
-// import reducers from './reducers'
-// import thunk from 'redux-thunk'
-// const store = createStore(reducers, {} , compose(applyMiddleware(thunk)));
+import { configureStore } from '@reduxjs/toolkit';
+import { persistStore, persistReducer } from 'redux-persist';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import mainSlice from './Slices/MainSlice';
 
-// export default store;
+// Redux Persist Configuration
+const persistConfig = {
+  key: 'root', // Key for storage
+  storage: AsyncStorage, // Use AsyncStorage to persist data
+  whitelist: ['auth'], // Only persist the 'auth' reducer
+};
 
+// Wrap the MainSlice reducer with persistReducer
+const persistedReducer = persistReducer(persistConfig, mainSlice);
 
-import { configureStore } from '@reduxjs/toolkit'
-import MainSlice from './Slices/MainSlice'
-  
- 
-
+// Configure Redux Store
 export const store = configureStore({
   reducer: {
-    auth:MainSlice
+    auth: persistedReducer,
   },
-})
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false, // Disable serialization check
+    }),
+});
+
+// Create the persistor
+export const persistor = persistStore(store);

@@ -19,12 +19,15 @@ import {Endpoints} from '../../API'
 import { setOrderList ,setNewOrder} from '../../redux/Slices/MainSlice';
 
 
-function HomeScreen(props) {
+function HomeScreen(props) 
+{
   var list = useSelector(state => state.auth.OrderList);
 
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text></Text>
+      <Text>
+        
+      </Text>
     </View>
   );
 }
@@ -110,17 +113,14 @@ let formData = new FormData();
     // <View>
     <>     
        <CustomHeader title="Orders" navigation={navigation} />
-       <Loader loading={Isload} />
+       {/* <Loader loading={Isload} /> */}
     
      
 {
 IsDataLoad==true?
 <Tab.Navigator>
 
-{
-
-/* <Tab.Screen name="All" children={()=><OrderPage AllOrderList={AllOrderList}/>}/>
-<Tab.Screen name="Pending"  children={()=><OrderPendingPage PendingOrderList={PendingOrderList} /> }/> */}
+ 
    <Tab.Screen name="New" component={NewOrderList} />
         <Tab.Screen name="Completed" component={CompleteOrderList} />
         <Tab.Screen name="All" component={OrderPage} />
