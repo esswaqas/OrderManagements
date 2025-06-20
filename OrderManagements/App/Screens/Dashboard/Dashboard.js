@@ -94,6 +94,8 @@ export default function App({navigation}) {
         
             <ScrollView contentContainerStyle={{flexGrow:1}}>
            <CustomHeader title="Dashboard" navigation={navigation}  />
+
+           
             <View style={{ flex:1, alignItems: 'center',  }}>
 
            <View style={[Style.loginForm,{ borderRadius: 0, paddingVertical:0, marginTop:hp('-10%'),    backgroundColor: '#f2f2f2' }]}  >
